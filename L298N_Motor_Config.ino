@@ -1,6 +1,17 @@
-void setup() {
+//
+//Motor Pins
+    //Enable pin for first motor
+int IN1 = 4;       //control pin for first motor
+int IN2 = 5;  //control pin for first motor
+int IN3= 6;
+int IN4= 8;
+//control pin for second motor
+
+void setup ( ) {
 Serial.begin (9600); //Starting the serial communication at 9600 baud rate
-pinMode(IN1, OUTPUT);  //Initializing the motor pins as output 
+//Initializing the motor pins as output
+ 
+pinMode(IN1, OUTPUT);  
 pinMode(IN2, OUTPUT);
 pinMode(IN3, OUTPUT);
 pinMode(IN4, OUTPUT);
@@ -8,11 +19,10 @@ pinMode(IN4, OUTPUT);
 //Initializng the joystick pins as input
 pinMode (7, INPUT) ;
 pinMode(13,OUTPUT);                    
-
+                       
 }
-
-void loop() {
- Serial.print("IRSensorip  ");
+void loop () {
+Serial.print("IRSensorip  ");
 Serial.println(digitalRead(7));
 if (digitalRead(7)==0){     //Rotating the left motor in clockwise direction
 //Mapping the values to 0-255 to move the motor
@@ -42,4 +52,4 @@ Serial.print("IRSensorip  ");
 Serial.println(digitalRead(7));
 }
  delay(1000);
-}
+}  

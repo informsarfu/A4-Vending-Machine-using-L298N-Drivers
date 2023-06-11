@@ -21,6 +21,10 @@ To build and operate the A4 vending machine, you will need the following compone
 
 The circuit diagram illustrates the connection setup between the Arduino UNO, L298N motor drivers, and infrared sensors. Please refer to the diagram when connecting the components.
 
+
+![image](https://github.com/informsarfu/A4-Vending-Machine-using-L298N-Drivers/assets/78136256/606759d6-c0cf-4ec5-9869-d69e9c30f86e)
+
+
 ## Installation
 
 To set up the A4 vending machine, follow these steps:
